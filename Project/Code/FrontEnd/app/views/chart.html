@@ -1,0 +1,109 @@
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Charts</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- Div for line chart and bar graph starts here-->
+    <div class="row">
+        <div ng-app="sbAdminApp" ng-init="line_function1()">
+            <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="ChartCtrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Products and Prices</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart chart-line chart-xl" data="line1.data" labels="line1.labels" legend="false"
+                        click="line.onClick" series="line1.series"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bar graph starts here-->
+        <div ng-app="sbAdminApp" ng-init="bar_function1()">
+            <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Sales of Products per Year</div>
+                    <div class="panel-body">
+                        <canvas id="bar" class="chart chart-bar" data="bar1.data" labels="bar1.labels" series="bar1.series"
+                        options="bar1.options"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bar graph ends here-->
+    </div>
+    <!-- Div for line chart and bar graph ends here-->
+
+    <!-- Div for line chart and bar graph starts here-->
+    <div class="row">
+        <!-- Bar graph starts here-->
+        <div ng-app="sbAdminApp" ng-init="bar_function2()">
+            <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Products per Supplier</div>
+                    <div class="panel-body">
+                        <canvas id="bar" class="chart chart-bar" data="bar2.data" labels="bar2.labels" series="bar2.series"
+                        options="bar2.options"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bar graph ends here-->
+        <div ng-app="sbAdminApp" ng-init="line_function2()">
+            <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="ChartCtrl">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Orders per Customer</div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart chart-line chart-xl" data="line2.data" labels="line2.labels" legend="false"
+                        click="line.onClick" series="line2.series"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Div for line chart and bar graph ends here-->
+
+  <!--  <div class="row">
+        <div class="col-lg-6 col-sm-12" id="doughnut-chart" ng-controller="ChartCtrl">
+            <div class="panel panel-default">
+                <div class="panel-heading">Doughnut Chart</div>
+                <div class="panel-body">
+                <canvas id="doughnut" class="chart chart-doughnut chart-xs" data="donut.data" labels="donut.labels" legend="false"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="radar-chart" ng-controller="ChartCtrl">
+            <div class="panel panel-default">
+                <div class="panel-heading">Radar Chart</div>
+                <div class="panel-body">
+                    <canvas id="area" class="chart chart-radar" data="radar.data" labels="radar.labels" click="onClick"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="pie-chart" ng-controller="ChartCtrl">
+            <div class="panel panel-default">
+                <div class="panel-heading">Pie Chart</div>
+                <div class="panel-body">
+                    <canvas id="pie" class="chart chart-pie chart-xs" data="pie.data" labels="pie.labels"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="polar area-chart" ng-controller="ChartCtrl">
+          <div class="panel panel-default">
+            <div class="panel-heading">Polar Area Chart</div>
+            <div class="panel-body">
+              <canvas id="polar" class="chart chart-polar-area" data="polar.data" labels="polar.labels"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="base-chart" ng-controller="ChartCtrl">
+            <div class="panel panel-default">
+                <div class="panel-heading">Dynamic Chart</div>
+                <div class="panel-body">
+                <canvas id="base" class="chart chart-base" chart-type="dynamic.type" data="dynamic.data" labels="dynamic.labels" legend="true"></canvas>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary pull-right" ng-click="dynamic.toggle()">Toggle</button>
+        </div> -->
+    </div>
